@@ -1,0 +1,66 @@
+sar -u para procesadores sar -u 1 1000
+sar -r para memoria
+sar -D
+`
+
+htop herramienta de analisis de recursos memoria y procesadores
+
+
+MPM p/ linux
+Prefork --> Orientado a Procesos
+Worker --> Orientado a Threads
+event --> Orientado a Threads con keepalive
+
+MPM Prefork Lo tenemos que tunear cuando pensemos que vamos a superar las 256 conexiones concurrentes (Max Request Workers -- Max usuarios concurrentes)
+
+
+httpd -V --> para saber como esta la situacion actual del web server
+
+
+Peso pag
+
+Memoria 80%  --> free -g
+
+memoria 80%/Peso pag (apache con carga - Apache sin Carga)
+ps aux sin acceso al server sabes el peso de apache. Le permitis a UN usuario que le pegue a la pag web.
+
+Volves a ps aux y sacas diferencia del total  
+
+Sumar Bytes
+
+
+
+------------------------------------------------------------------
+DDOS:
+
+Ataque por denegacion de servicio
+
+
+mod_evasive esta en repositorios epel, debian es el mas abierto.
+
+instala archivo
+/etc/httpd/con.d/mod_evasive.conf
+Evalua tiempo y concurrencia para bannear ips
+
+
+Slow
+mod_qos:
+
+Agregar en
+/etc/httpd/conf.modules.d
+10-mod_qos.conf
+
+Ver foto
+
+Se agrega en config.d
+
+<<<<<<<<<<Todo esto queda logueado en el LOG DE ERROR!! >>>>>>>>>>>
+
+Mod_suexec:
+Sirve para limitar un virtualhost, especificamente un documentroot a un usuario y grupo definido
+Ante la violacion del apache, no permita violar otro documentroot, ya que esta asignado a un unico usuario
+
+Mod_security:
+Sistema completo de proteccion
+
+
