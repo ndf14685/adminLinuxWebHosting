@@ -1,0 +1,28 @@
+Nextcloud 
+php fpm 
+
+php 7.x 
+habilitar software collecction 
+
+
+
+yum install -y centos-release-scl 
+Repo que habilita paquetes adicionales de centos 
+
+
+
+Software Collection 
+Lo guarda en un repo alternativo en: 
+/opt/rh/
+
+
+23.20.40.69   educacionit educacionit
+
+
+
+
+
+
+
+Para resetear pass
+occ user:resetpassword admin

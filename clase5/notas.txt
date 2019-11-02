@@ -1,0 +1,20 @@
+DNS BlackList
+
+Ver imagen2.jpg
+
+Lo que hace es preguntar en el dns si existe agregandolo al pcipio del host para consultar en el dns blacklist
+
+
+
+pflogsumm 
+Analiza archivo que se le pasa /var/log/maillog, para mostrarnos estadisticas
+
+Ej:
+pflogsumm /var/log/maillog
+
+
+
+Da un resumen muyyy detallado de los logs, excelente. 
+
+Analizar si es posible readaptar
+
